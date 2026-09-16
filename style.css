@@ -257,12 +257,31 @@ ul, ol {
 }
 
 .logo-mark {
-  width: 40px;
-  height: 40px;
+  width: 46px;
+  height: 46px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.brand-logo-img {
+  width: 46px;
+  height: 46px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 2px solid var(--teal-500);
+  box-shadow: var(--shadow-sm);
+  background-color: #FFFFFF;
+}
+
+.brand-logo-img-small {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  object-fit: cover;
+  border: 2px solid var(--teal-500);
+  background-color: #FFFFFF;
 }
 
 .logo-svg {
