@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ApexCare Health Insurance - Professional healthcare coverage with comprehensive PPO network, pharmacy benefits, and flexible payment options." />
+  <title>ApexCare Health Insurance | Comprehensive Healthcare Coverage & PPO Network</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Accessible Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Utility Bar for Healthcare Wayfinding & Support -->
+  <aside class="top-utility-bar" aria-label="Support and Accessibility Shortcuts">
+    <div class="container utility-container">
+      <div class="utility-left">
+        <span class="emergency-badge"><span class="pulse-dot" aria-hidden="true"></span> 24/7 Member Hotline: <strong>1-800-555-APEX (2739)</strong></span>
+        <span class="utility-divider" aria-hidden="true">|</span>
+        <a href="#providers-section" class="utility-link">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          Find an Urgent Care / Hospital
+        </a>
+      </div>
+      <div class="utility-right">
+        <span class="coverage-status">System Status: <span class="status-online">Portals Operational</span></span>
+        <span class="utility-divider" aria-hidden="true">|</span>
+        <div class="language-picker" aria-label="Language selector">
+          <span class="lang-text">Language: <strong>EN</strong></span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Global Header & Main Navigation -->
+  <header class="site-header" id="site-header">
+    <div class="container header-container">
+      
+      <!-- Brand Logo & Identity -->
+      <a href="index.html" class="brand-logo" aria-label="ApexCare Health Insurance Home">
+        <div class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <rect width="40" height="40" rx="10" fill="#00A3A6"/>
+            <path d="M20 9L29 13.5V20.5C29 26.2 25.2 31.4 20 33C14.8 31.4 11 26.2 11 20.5V13.5L20 9Z" fill="#0A2540"/>
+            <path d="M20 15V27M14 21H26" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div class="logo-text">
+          <span class="brand-name">ApexCare</span>
+          <span class="brand-tagline">Health & PPO Network</span>
+        </div>
+      </a>
+
+      <!-- DESKTOP NAVIGATION (Visible >= 1024px) -->
+      <nav class="desktop-nav" aria-label="Primary Desktop Navigation">
+        <ul class="nav-list" role="menubar">
+          
+          <!-- 1. PLANS DROPDOWN -->
+          <li class="nav-item has-dropdown" role="none">
+            <button type="button" 
+                    class="nav-link dropdown-btn" 
+                    id="plans-btn" 
+                    aria-expanded="false" 
+                    aria-haspopup="true" 
+                    aria-controls="plans-menu"
+                    role="menuitem">
+              <span>Plans</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            
+            <div class="dropdown-panel plans-dropdown" id="plans-menu" role="menu" aria-labelledby="plans-btn">
+              <div class="dropdown-header">
+                <span class="dropdown-title">Healthcare Insurance Plans</span>
+                <span class="dropdown-subtitle">Choose the tier that protects your health and budget</span>
+              </div>
+              <div class="plans-grid">
+                <!-- Classic -->
+                <a href="#plans-section" class="plan-card-item" role="menuitem">
+                  <div class="plan-card-top">
+                    <span class="plan-name">Classic</span>
+                    <span class="plan-tag tag-basic">Essential</span>
+                  </div>
+                  <p class="plan-desc">Basic health coverage for essential healthcare needs.</p>
+                  <div class="plan-perk">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00A3A6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Annual checkups & generic Rx</span>
+                  </div>
+                </a>
+
+                <!-- Standard -->
+                <a href="#plans-section" class="plan-card-item featured-plan" role="menuitem">
+                  <div class="plan-card-top">
+                    <span class="plan-name">Standard</span>
+                    <span class="plan-tag tag-popular">Most Popular</span>
+                  </div>
+                  <p class="plan-desc">Balanced coverage for everyday healthcare and emergencies.</p>
+                  <div class="plan-perk">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00A3A6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Specialist care & hospital stays</span>
+                  </div>
+                </a>
+
+                <!-- Premium -->
+                <a href="#plans-section" class="plan-card-item" role="menuitem">
+                  <div class="plan-card-top">
+                    <span class="plan-name">Premium</span>
+                    <span class="plan-tag tag-premium">Comprehensive</span>
+                  </div>
+                  <p class="plan-desc">Expanded healthcare coverage with additional benefits.</p>
+                  <div class="plan-perk">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00A3A6" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Zero deductible & global emergency</span>
+                  </div>
+                </a>
+              </div>
+              <div class="dropdown-footer">
+                <a href="#plans-section" class="inline-action-link">
+                  Compare all health plan tiers & benefits
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 2. CORE OPTIONS MEGA MENU -->
+          <li class="nav-item has-dropdown mega-nav-item" role="none">
+            <button type="button" 
+                    class="nav-link dropdown-btn" 
+                    id="core-btn" 
+                    aria-expanded="false" 
+                    aria-haspopup="true" 
+                    aria-controls="core-megamenu"
+                    role="menuitem">
+              <span>Core Options</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+
+            <!-- MEGA MENU DROPDOWN PANEL -->
+            <div class="dropdown-panel mega-menu-panel" id="core-megamenu" role="region" aria-label="Core Options Mega Menu">
+              <div class="mega-menu-inner">
+                
+                <!-- LEFT COLUMN: Categories -->
+                <div class="mega-categories-col" role="tablist" aria-label="Core Options Categories">
+                  <div class="col-header">
+                    <span class="col-label">CORE OPTIONS</span>
+                    <span class="col-hint">Select a category to view coverage details</span>
+                  </div>
+                  
+                  <button type="button" 
+                          class="category-tab-btn active" 
+                          id="tab-coverage" 
+                          role="tab" 
+                          aria-selected="true" 
+                          aria-controls="panel-coverage"
+                          tabindex="0"
+                          data-category="coverage">
+                    <span class="cat-tab-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                    </span>
+                    <span class="cat-tab-text">Coverage</span>
+                    <svg class="cat-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </button>
+
+                  <button type="button" 
+                          class="category-tab-btn" 
+                          id="tab-pharmacy" 
+                          role="tab" 
+                          aria-selected="false" 
+                          aria-controls="panel-pharmacy"
+                          tabindex="-1"
+                          data-category="pharmacy">
+                    <span class="cat-tab-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"></path><path d="m8.5 8.5 7 7"></path></svg>
+                    </span>
+                    <span class="cat-tab-text">Pharmacy</span>
+                    <svg class="cat-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </button>
+
+                  <button type="button" 
+                          class="category-tab-btn" 
+                          id="tab-hospital" 
+                          role="tab" 
+                          aria-selected="false" 
+                          aria-controls="panel-hospital"
+                          tabindex="-1"
+                          data-category="hospital">
+                    <span class="cat-tab-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M12 8v8M8 12h8"></path></svg>
+                    </span>
+                    <span class="cat-tab-text">Hospital / Clinic</span>
+                    <svg class="cat-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </button>
+
+                  <button type="button" 
+                          class="category-tab-btn" 
+                          id="tab-physician" 
+                          role="tab" 
+                          aria-selected="false" 
+                          aria-controls="panel-physician"
+                          tabindex="-1"
+                          data-category="physician">
+                    <span class="cat-tab-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
+                    </span>
+                    <span class="cat-tab-text">Physician</span>
+                    <svg class="cat-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </button>
+
+                  <button type="button" 
+                          class="category-tab-btn" 
+                          id="tab-benefits" 
+                          role="tab" 
+                          aria-selected="false" 
+                          aria-controls="panel-benefits"
+                          tabindex="-1"
+                          data-category="benefits">
+                    <span class="cat-tab-icon">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                    </span>
+                    <span class="cat-tab-text">Benefits</span>
+                    <svg class="cat-arrow" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                  </button>
+                </div>
+
+                <!-- RIGHT COLUMN: Sub-Content Panels -->
+                <div class="mega-subcontent-col">
+                  
+                  <!-- Panel 1: Coverage -->
+                  <div class="subcontent-panel active" id="panel-coverage" role="tabpanel" aria-labelledby="tab-coverage">
+                    <div class="subpanel-header">
+                      <div>
+                        <h4 class="subpanel-title">Coverage Overview & Protection</h4>
+                        <p class="subpanel-desc">Essential medical and surgical care protected by your policy</p>
+                      </div>
+                      <span class="category-pill">Category: Coverage</span>
+                    </div>
+                    <div class="sub-items-grid">
+                      <a href="#coverage-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Hospitalization</span>
+                          <span class="item-sub">Inpatient room, ICU, and acute care</span>
+                        </div>
+                      </a>
+                      <a href="#coverage-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Surgery</span>
+                          <span class="item-sub">Major & minor operative procedures</span>
+                        </div>
+                      </a>
+                      <a href="#coverage-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Emergency Care</span>
+                          <span class="item-sub">24/7 ER & trauma center coverage</span>
+                        </div>
+                      </a>
+                      <a href="#coverage-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Doctor's Consultation</span>
+                          <span class="item-sub">General practitioner checkups & visits</span>
+                        </div>
+                      </a>
+                      <a href="#coverage-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Diagnostic Tests</span>
+                          <span class="item-sub">X-rays, MRI, CT scans, and lab work</span>
+                        </div>
+                      </a>
+                      <a href="#coverage-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Medicine Coverage</span>
+                          <span class="item-sub">Inpatient medications & IV therapies</span>
+                        </div>
+                      </a>
+                      <a href="#coverage-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Specialist Care</span>
+                          <span class="item-sub">Cardiology, oncology, neurology, etc.</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="subpanel-callout">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00A3A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                      <span>Pre-authorization is waived for verified hospital emergencies.</span>
+                    </div>
+                  </div>
+
+                  <!-- Panel 2: Pharmacy -->
+                  <div class="subcontent-panel" id="panel-pharmacy" role="tabpanel" aria-labelledby="tab-pharmacy" hidden>
+                    <div class="subpanel-header">
+                      <div>
+                        <h4 class="subpanel-title">Pharmacy Benefits & Prescriptions</h4>
+                        <p class="subpanel-desc">Formulary medicines, network pharmacies, and reimbursement</p>
+                      </div>
+                      <span class="category-pill">Category: Pharmacy</span>
+                    </div>
+                    <div class="sub-items-grid">
+                      <a href="#coverage-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Prescription Coverage</span>
+                          <span class="item-sub">Co-pay tiers and coverage formulas</span>
+                        </div>
+                      </a>
+                      <a href="#coverage-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Generic Medicines</span>
+                          <span class="item-sub">Low-cost Tier 1 FDA-approved generics</span>
+                        </div>
+                      </a>
+                      <a href="#coverage-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Brand Medicines</span>
+                          <span class="item-sub">Preferred & non-preferred branded drugs</span>
+                        </div>
+                      </a>
+                      <a href="#coverage-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Maintenance Medicines</span>
+                          <span class="item-sub">90-day supply for chronic treatments</span>
+                        </div>
+                      </a>
+                      <a href="#coverage-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Pharmacy Network</span>
+                          <span class="item-sub">Over 65,000 nationwide participating drugstores</span>
+                        </div>
+                      </a>
+                      <a href="#coverage-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Medicine Reimbursement</span>
+                          <span class="item-sub">Direct claims filing for out-of-network Rx</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="subpanel-callout">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00A3A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                      <span>Check the 2026 Drug Formulary to verify covered medication tiers.</span>
+                    </div>
+                  </div>
+
+                  <!-- Panel 3: Hospital / Clinic -->
+                  <div class="subcontent-panel" id="panel-hospital" role="tabpanel" aria-labelledby="tab-hospital" hidden>
+                    <div class="subpanel-header">
+                      <div>
+                        <h4 class="subpanel-title">Hospitals & Clinical Facilities</h4>
+                        <p class="subpanel-desc">Accredited medical centers, surgery suites, and outpatient care</p>
+                      </div>
+                      <span class="category-pill">Category: Hospital / Clinic</span>
+                    </div>
+                    <div class="sub-items-grid">
+                      <a href="#providers-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Accredited Hospitals</span>
+                          <span class="item-sub">Tertiary, secondary, and specialty hospitals</span>
+                        </div>
+                      </a>
+                      <a href="#providers-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Clinics</span>
+                          <span class="item-sub">Ambulatory & primary community clinics</span>
+                        </div>
+                      </a>
+                      <a href="#providers-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Emergency Facilities</span>
+                          <span class="item-sub">Urgent care centers & trauma triage</span>
+                        </div>
+                      </a>
+                      <a href="#providers-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Hospitalization</span>
+                          <span class="item-sub">Admissions procedures & discharge planning</span>
+                        </div>
+                      </a>
+                      <a href="#providers-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Outpatient Services</span>
+                          <span class="item-sub">Day surgeries, rehab therapy, and dialysis</span>
+                        </div>
+                      </a>
+                      <a href="#providers-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Room & Board</span>
+                          <span class="item-sub">Standard private and semi-private room tiers</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="subpanel-callout">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00A3A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                      <span>Present your ApexCare digital member ID card upon admission.</span>
+                    </div>
+                  </div>
+
+                  <!-- Panel 4: Physician -->
+                  <div class="subcontent-panel" id="panel-physician" role="tabpanel" aria-labelledby="tab-physician" hidden>
+                    <div class="subpanel-header">
+                      <div>
+                        <h4 class="subpanel-title">Physicians & Healthcare Providers</h4>
+                        <p class="subpanel-desc">Primary doctors, specialists, and virtual teleconsultations</p>
+                      </div>
+                      <span class="category-pill">Category: Physician</span>
+                    </div>
+                    <div class="sub-items-grid">
+                      <a href="#providers-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">General Physician</span>
+                          <span class="item-sub">Family medicine, internists, and pediatricians</span>
+                        </div>
+                      </a>
+                      <a href="#providers-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Specialist</span>
+                          <span class="item-sub">Cardiologists, orthopedics, OB-GYN, and more</span>
+                        </div>
+                      </a>
+                      <a href="#providers-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Doctor Consultation</span>
+                          <span class="item-sub">In-clinic consultations with copay waiver</span>
+                        </div>
+                      </a>
+                      <a href="#providers-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Teleconsultation</span>
+                          <span class="item-sub">24/7 video and phone consultations on app</span>
+                        </div>
+                      </a>
+                      <a href="#providers-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Accredited Doctors</span>
+                          <span class="item-sub">Search our directory of certified practitioners</span>
+                        </div>
+                      </a>
+                      <a href="#providers-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Referral</span>
+                          <span class="item-sub">Direct referral letters for specialized treatments</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="subpanel-callout">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00A3A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                      <span>PPO members can visit in-network specialists without a primary referral!</span>
+                    </div>
+                  </div>
+
+                  <!-- Panel 5: Benefits -->
+                  <div class="subcontent-panel" id="panel-benefits" role="tabpanel" aria-labelledby="tab-benefits" hidden>
+                    <div class="subpanel-header">
+                      <div>
+                        <h4 class="subpanel-title">Value-Added Benefits & Wellness</h4>
+                        <p class="subpanel-desc">Preventive care, maternity, dental, vision, and wellness programs</p>
+                      </div>
+                      <span class="category-pill">Category: Benefits</span>
+                    </div>
+                    <div class="sub-items-grid">
+                      <a href="#benefits-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Preventive Care</span>
+                          <span class="item-sub">100% covered annual physical exams & screenings</span>
+                        </div>
+                      </a>
+                      <a href="#benefits-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Dental Benefits</span>
+                          <span class="item-sub">Bi-annual cleanings, fillings, and dental X-rays</span>
+                        </div>
+                      </a>
+                      <a href="#benefits-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Vision Benefits</span>
+                          <span class="item-sub">Eye exams, contact lenses, and frame allowances</span>
+                        </div>
+                      </a>
+                      <a href="#benefits-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Maternity Benefits</span>
+                          <span class="item-sub">Prenatal, delivery, and post-natal newborn care</span>
+                        </div>
+                      </a>
+                      <a href="#benefits-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Wellness Programs</span>
+                          <span class="item-sub">Gym discounts, mental health counseling, & apps</span>
+                        </div>
+                      </a>
+                      <a href="#benefits-section" class="sub-option-item">
+                        <span class="bullet-dot" aria-hidden="true"></span>
+                        <div class="item-info">
+                          <span class="item-title">Annual Benefits</span>
+                          <span class="item-sub">Maximum annual benefit limit & rollover features</span>
+                        </div>
+                      </a>
+                    </div>
+                    <div class="subpanel-callout">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#00A3A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+                      <span>Preventive screenings have $0 copay across all network tiers.</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- 3. PAYMENT OPTIONS DROPDOWN -->
+          <li class="nav-item has-dropdown" role="none">
+            <button type="button" 
+                    class="nav-link dropdown-btn" 
+                    id="payment-btn" 
+                    aria-expanded="false" 
+                    aria-haspopup="true" 
+                    aria-controls="payment-menu"
+                    role="menuitem">
+              <span>Payment Options</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            
+            <div class="dropdown-panel payment-dropdown" id="payment-menu" role="menu" aria-labelledby="payment-btn">
+              <div class="dropdown-header">
+                <span class="dropdown-title">Premium Payment Methods</span>
+                <span class="dropdown-subtitle">Convenient, secure payment channels with instant receipt</span>
+              </div>
+              <div class="payment-options-list">
+                
+                <!-- Onsite -->
+                <a href="#payment-section" class="payment-item" role="menuitem">
+                  <div class="payment-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                  </div>
+                  <div class="payment-text">
+                    <div class="payment-label">Onsite</div>
+                    <div class="payment-desc">Pay at regional branches, accredited centers, & hospital cashier desks.</div>
+                  </div>
+                </a>
+
+                <!-- E-Wallet -->
+                <a href="#payment-section" class="payment-item" role="menuitem">
+                  <div class="payment-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+                  </div>
+                  <div class="payment-text">
+                    <div class="payment-label">E-Wallet</div>
+                    <div class="payment-desc">Instant online payment via GCash, Maya, Apple Pay, and PayPal.</div>
+                  </div>
+                </a>
+
+                <!-- Bank Account -->
+                <a href="#payment-section" class="payment-item" role="menuitem">
+                  <div class="payment-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+                  </div>
+                  <div class="payment-text">
+                    <div class="payment-label">Bank Account</div>
+                    <div class="payment-desc">Direct auto-debit, electronic bank transfers, and bills payment.</div>
+                  </div>
+                </a>
+
+                <!-- Mailing -->
+                <a href="#payment-section" class="payment-item" role="menuitem">
+                  <div class="payment-icon-wrap" aria-hidden="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                  </div>
+                  <div class="payment-text">
+                    <div class="payment-label">Mailing</div>
+                    <div class="payment-desc">Send check or money order via postal mail with your policy voucher.</div>
+                  </div>
+                </a>
+
+              </div>
+              <div class="dropdown-footer">
+                <span class="secure-note">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00A3A6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                  256-Bit SSL Encrypted Healthcare Billing Protection
+                </span>
+              </div>
+            </div>
+          </li>
+
+          <!-- 4. YOUR PPO BUTTON / DASHBOARD -->
+          <li class="nav-item has-dropdown ppo-nav-item" role="none">
+            <button type="button" 
+                    class="nav-link dropdown-btn ppo-toggle-btn" 
+                    id="ppo-btn" 
+                    aria-expanded="false" 
+                    aria-haspopup="true" 
+                    aria-controls="ppo-menu"
+                    role="menuitem">
+              <span class="ppo-pill-icon" aria-hidden="true">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+              </span>
+              <span>Your PPO</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+
+            <!-- PPO DASHBOARD PANEL -->
+            <div class="dropdown-panel ppo-dropdown" id="ppo-menu" role="menu" aria-labelledby="ppo-btn">
+              <div class="ppo-member-card">
+                <div class="ppo-status-row">
+                  <span class="ppo-tier-tag">Standard PPO Plan</span>
+                  <span class="ppo-status-indicator"><span class="green-dot" aria-hidden="true"></span> Active</span>
+                </div>
+                <div class="ppo-id-num">Policy #APX-948201-P</div>
+                <div class="ppo-meta-row">
+                  <span>Network: Tier 1 Metro PPO</span>
+                  <span>Copay: $15 / visit</span>
+                </div>
+              </div>
+
+              <div class="ppo-items-list">
+                <a href="#user-portal" class="ppo-action-item" role="menuitem">
+                  <span class="ppo-item-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                  </span>
+                  <div class="ppo-item-content">
+                    <span class="ppo-item-name">My Plan</span>
+                    <span class="ppo-item-hint">View coverage summary & policy tier</span>
+                  </div>
+                </a>
+
+                <a href="#user-portal" class="ppo-action-item" role="menuitem">
+                  <span class="ppo-item-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                  </span>
+                  <div class="ppo-item-content">
+                    <span class="ppo-item-name">Coverage</span>
+                    <span class="ppo-item-hint">Inpatient, outpatient & deductibles</span>
+                  </div>
+                </a>
+
+                <a href="#user-portal" class="ppo-action-item" role="menuitem">
+                  <span class="ppo-item-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                  </span>
+                  <div class="ppo-item-content">
+                    <span class="ppo-item-name">Benefits</span>
+                    <span class="ppo-item-hint">Wellness perks & preventative care</span>
+                  </div>
+                </a>
+
+                <a href="#user-portal" class="ppo-action-item" role="menuitem">
+                  <span class="ppo-item-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                  </span>
+                  <div class="ppo-item-content">
+                    <span class="ppo-item-name">Claims</span>
+                    <span class="ppo-item-hint">Track claim reimbursement (1 in review)</span>
+                  </div>
+                  <span class="notification-dot" title="1 claim in review" aria-label="1 claim pending"></span>
+                </a>
+
+                <a href="#user-portal" class="ppo-action-item" role="menuitem">
+                  <span class="ppo-item-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                  </span>
+                  <div class="ppo-item-content">
+                    <span class="ppo-item-name">Appointments</span>
+                    <span class="ppo-item-hint">Dr. Emily Morales (Sept 22, 10:00 AM)</span>
+                  </div>
+                </a>
+
+                <a href="#user-portal" class="ppo-action-item" role="menuitem">
+                  <span class="ppo-item-icon" aria-hidden="true">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"></path><path d="M12 18V6"></path></svg>
+                  </span>
+                  <div class="ppo-item-content">
+                    <span class="ppo-item-name">Payment History</span>
+                    <span class="ppo-item-hint">Monthly receipts & statements</span>
+                  </div>
+                </a>
+              </div>
+
+              <div class="dropdown-footer">
+                <a href="#user-portal" class="ppo-portal-cta">
+                  Open Member Portal Dashboard
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
+            </div>
+          </li>
+
+          <!-- 5. USER PROFILE DROPDOWN -->
+          <li class="nav-item has-dropdown profile-nav-item" role="none">
+            <button type="button" 
+                    class="nav-link dropdown-btn user-profile-btn" 
+                    id="profile-btn" 
+                    aria-expanded="false" 
+                    aria-haspopup="true" 
+                    aria-controls="profile-menu"
+                    aria-label="User Account Menu for Maria Santos"
+                    role="menuitem">
+              <div class="avatar-ring" aria-hidden="true">
+                <span class="avatar-initials">MS</span>
+              </div>
+              <span class="user-name-label">Maria S.</span>
+              <svg class="chevron-icon" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+
+            <!-- PROFILE MENU PANEL -->
+            <div class="dropdown-panel profile-dropdown" id="profile-menu" role="menu" aria-labelledby="profile-btn">
+              <div class="profile-header-card">
+                <div class="profile-avatar-large" aria-hidden="true">MS</div>
+                <div class="profile-user-details">
+                  <div class="profile-full-name">Maria Santos</div>
+                  <div class="profile-email">maria.santos@apexcare.org</div>
+                  <span class="profile-role-badge">Verified Primary Insured</span>
+                </div>
+              </div>
+
+              <div class="profile-links-list">
+                <a href="#user-portal" class="profile-item" role="menuitem">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                  <span>My Profile</span>
+                </a>
+
+                <a href="#user-portal" class="profile-item" role="menuitem">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+                  <span>Account Settings</span>
+                </a>
+
+                <a href="#user-portal" class="profile-item" role="menuitem">
+                  <div class="icon-with-badge">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                    <span class="unread-count" aria-label="3 unread notifications">3</span>
+                  </div>
+                  <span>Notifications</span>
+                </a>
+
+                <div class="profile-divider" role="separator"></div>
+
+                <a href="#logout" class="profile-item logout-link" role="menuitem" id="logout-btn">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- MOBILE HAMBURGER BUTTON (Visible < 1024px) -->
+      <div class="mobile-actions">
+        <button type="button" 
+                class="hamburger-btn" 
+                id="hamburger-btn" 
+                aria-label="Open primary navigation menu" 
+                aria-expanded="false" 
+                aria-controls="mobile-nav-drawer">
+          <span class="hamburger-box" aria-hidden="true">
+            <span class="hamburger-line top-line"></span>
+            <span class="hamburger-line mid-line"></span>
+            <span class="hamburger-line bot-line"></span>
+          </span>
+          <span class="hamburger-label">Menu</span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER & BACKDROP OVERLAY (< 1024px) -->
+  <div class="mobile-drawer-overlay" id="mobile-overlay" aria-hidden="true"></div>
+  
+  <aside class="mobile-nav-drawer" id="mobile-nav-drawer" aria-label="Mobile Navigation Menu" aria-hidden="true">
+    <div class="mobile-drawer-inner">
+      
+      <!-- Drawer Header -->
+      <div class="mobile-drawer-header">
+        <div class="mobile-brand">
+          <div class="logo-mark small" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" width="28" height="28">
+              <rect width="40" height="40" rx="8" fill="#00A3A6"/>
+              <path d="M20 9L29 13.5V20.5C29 26.2 25.2 31.4 20 33C14.8 31.4 11 26.2 11 20.5V13.5L20 9Z" fill="#0A2540"/>
+              <path d="M20 15V27M14 21H26" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="mobile-brand-title">ApexCare Health</span>
+        </div>
+        <button type="button" class="mobile-close-btn" id="mobile-close-btn" aria-label="Close navigation menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+
+      <!-- Member Quick Card inside Drawer -->
+      <div class="mobile-user-quickcard">
+        <div class="quickcard-avatar" aria-hidden="true">MS</div>
+        <div class="quickcard-info">
+          <div class="quickcard-name">Maria Santos</div>
+          <div class="quickcard-plan">Standard PPO • #APX-948201</div>
+        </div>
+      </div>
+
+      <!-- Accordion Navigation List -->
+      <nav class="mobile-accordion-nav" aria-label="Mobile Navigation Accordions">
+        <ul class="mobile-nav-list">
+          
+          <!-- Accordion 1: Plans -->
+          <li class="mobile-accordion-item">
+            <button type="button" class="accordion-trigger" id="m-plans-trigger" aria-expanded="false" aria-controls="m-plans-content">
+              <span class="acc-trigger-left">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span class="acc-title">Plans</span>
+              </span>
+              <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-panel" id="m-plans-content" aria-labelledby="m-plans-trigger" hidden>
+              <ul class="sub-nav-list">
+                <li><a href="#plans-section" class="mobile-sublink"><strong>Classic</strong><span>Basic essential coverage for everyday wellness</span></a></li>
+                <li><a href="#plans-section" class="mobile-sublink"><strong>Standard</strong><span>Balanced coverage for routine care & emergencies</span></a></li>
+                <li><a href="#plans-section" class="mobile-sublink"><strong>Premium</strong><span>Expanded comprehensive coverage with maximum benefits</span></a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Accordion 2: Core Options (Hierarchical) -->
+          <li class="mobile-accordion-item">
+            <button type="button" class="accordion-trigger" id="m-core-trigger" aria-expanded="false" aria-controls="m-core-content">
+              <span class="acc-trigger-left">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+                <span class="acc-title">Core Options</span>
+              </span>
+              <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-panel" id="m-core-content" aria-labelledby="m-core-trigger" hidden>
+              
+              <!-- Nested Accordion: Coverage -->
+              <div class="nested-accordion-group">
+                <button type="button" class="nested-trigger" aria-expanded="false">
+                  <span>1. Coverage</span>
+                  <svg class="nested-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="nested-panel" hidden>
+                  <ul class="nested-list">
+                    <li><a href="#coverage-section">Hospitalization</a></li>
+                    <li><a href="#coverage-section">Surgery</a></li>
+                    <li><a href="#coverage-section">Emergency Care</a></li>
+                    <li><a href="#coverage-section">Doctor's Consultation</a></li>
+                    <li><a href="#coverage-section">Diagnostic Tests</a></li>
+                    <li><a href="#coverage-section">Medicine Coverage</a></li>
+                    <li><a href="#coverage-section">Specialist Care</a></li>
+                  </ul>
+                </div>
+
+                <!-- Nested Accordion: Pharmacy -->
+                <button type="button" class="nested-trigger" aria-expanded="false">
+                  <span>2. Pharmacy</span>
+                  <svg class="nested-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="nested-panel" hidden>
+                  <ul class="nested-list">
+                    <li><a href="#coverage-section">Prescription Coverage</a></li>
+                    <li><a href="#coverage-section">Generic Medicines</a></li>
+                    <li><a href="#coverage-section">Brand Medicines</a></li>
+                    <li><a href="#coverage-section">Maintenance Medicines</a></li>
+                    <li><a href="#coverage-section">Pharmacy Network</a></li>
+                    <li><a href="#coverage-section">Medicine Reimbursement</a></li>
+                  </ul>
+                </div>
+
+                <!-- Nested Accordion: Hospital / Clinic -->
+                <button type="button" class="nested-trigger" aria-expanded="false">
+                  <span>3. Hospital / Clinic</span>
+                  <svg class="nested-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="nested-panel" hidden>
+                  <ul class="nested-list">
+                    <li><a href="#providers-section">Accredited Hospitals</a></li>
+                    <li><a href="#providers-section">Clinics</a></li>
+                    <li><a href="#providers-section">Emergency Facilities</a></li>
+                    <li><a href="#providers-section">Hospitalization</a></li>
+                    <li><a href="#providers-section">Outpatient Services</a></li>
+                    <li><a href="#providers-section">Room & Board</a></li>
+                  </ul>
+                </div>
+
+                <!-- Nested Accordion: Physician -->
+                <button type="button" class="nested-trigger" aria-expanded="false">
+                  <span>4. Physician</span>
+                  <svg class="nested-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="nested-panel" hidden>
+                  <ul class="nested-list">
+                    <li><a href="#providers-section">General Physician</a></li>
+                    <li><a href="#providers-section">Specialist</a></li>
+                    <li><a href="#providers-section">Doctor Consultation</a></li>
+                    <li><a href="#providers-section">Teleconsultation</a></li>
+                    <li><a href="#providers-section">Accredited Doctors</a></li>
+                    <li><a href="#providers-section">Referral</a></li>
+                  </ul>
+                </div>
+
+                <!-- Nested Accordion: Benefits -->
+                <button type="button" class="nested-trigger" aria-expanded="false">
+                  <span>5. Benefits</span>
+                  <svg class="nested-chevron" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                </button>
+                <div class="nested-panel" hidden>
+                  <ul class="nested-list">
+                    <li><a href="#benefits-section">Preventive Care</a></li>
+                    <li><a href="#benefits-section">Dental Benefits</a></li>
+                    <li><a href="#benefits-section">Vision Benefits</a></li>
+                    <li><a href="#benefits-section">Maternity Benefits</a></li>
+                    <li><a href="#benefits-section">Wellness Programs</a></li>
+                    <li><a href="#benefits-section">Annual Benefits</a></li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </li>
+
+          <!-- Accordion 3: Payment Options -->
+          <li class="mobile-accordion-item">
+            <button type="button" class="accordion-trigger" id="m-payment-trigger" aria-expanded="false" aria-controls="m-payment-content">
+              <span class="acc-trigger-left">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="10" y1="10" x2="23" y2="10"></line></svg>
+                <span class="acc-title">Payment Options</span>
+              </span>
+              <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-panel" id="m-payment-content" aria-labelledby="m-payment-trigger" hidden>
+              <ul class="sub-nav-list">
+                <li><a href="#payment-section" class="mobile-sublink"><strong>Onsite</strong><span>In-person at branches & hospital cashiers</span></a></li>
+                <li><a href="#payment-section" class="mobile-sublink"><strong>E-Wallet</strong><span>Instant via GCash, Maya, Apple Pay, PayPal</span></a></li>
+                <li><a href="#payment-section" class="mobile-sublink"><strong>Bank Account</strong><span>Auto-debit & direct online bank transfer</span></a></li>
+                <li><a href="#payment-section" class="mobile-sublink"><strong>Mailing</strong><span>Check or money order mailed to billing HQ</span></a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Accordion 4: Your PPO -->
+          <li class="mobile-accordion-item">
+            <button type="button" class="accordion-trigger" id="m-ppo-trigger" aria-expanded="false" aria-controls="m-ppo-content">
+              <span class="acc-trigger-left">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path></svg>
+                <span class="acc-title">Your PPO Dashboard</span>
+              </span>
+              <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-panel" id="m-ppo-content" aria-labelledby="m-ppo-trigger" hidden>
+              <ul class="sub-nav-list">
+                <li><a href="#user-portal" class="mobile-sublink"><strong>My Plan</strong><span>Tier: Standard PPO</span></a></li>
+                <li><a href="#user-portal" class="mobile-sublink"><strong>Coverage</strong><span>Deductible & copays</span></a></li>
+                <li><a href="#user-portal" class="mobile-sublink"><strong>Benefits</strong><span>Wellness allowances</span></a></li>
+                <li><a href="#user-portal" class="mobile-sublink"><strong>Claims</strong><span>1 claim currently in review</span></a></li>
+                <li><a href="#user-portal" class="mobile-sublink"><strong>Appointments</strong><span>Dr. Morales (Sept 22)</span></a></li>
+                <li><a href="#user-portal" class="mobile-sublink"><strong>Payment History</strong><span>Past billing receipts</span></a></li>
+              </ul>
+            </div>
+          </li>
+
+          <!-- Accordion 5: Profile & Settings -->
+          <li class="mobile-accordion-item">
+            <button type="button" class="accordion-trigger" id="m-profile-trigger" aria-expanded="false" aria-controls="m-profile-content">
+              <span class="acc-trigger-left">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span class="acc-title">Profile & Account</span>
+              </span>
+              <svg class="acc-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </button>
+            <div class="accordion-panel" id="m-profile-content" aria-labelledby="m-profile-trigger" hidden>
+              <ul class="sub-nav-list">
+                <li><a href="#user-portal" class="mobile-sublink"><strong>My Profile</strong><span>Personal and contact info</span></a></li>
+                <li><a href="#user-portal" class="mobile-sublink"><strong>Account Settings</strong><span>Security, password, 2FA</span></a></li>
+                <li><a href="#user-portal" class="mobile-sublink"><strong>Notifications</strong><span>3 new member updates</span></a></li>
+                <li><a href="#logout" class="mobile-sublink logout-sublink"><strong>Logout</strong><span>Sign out safely</span></a></li>
+              </ul>
+            </div>
+          </li>
+
+        </ul>
+      </nav>
+
+      <!-- Drawer Emergency Footer -->
+      <div class="mobile-drawer-footer">
+        <div class="emergency-help-box">
+          <span class="emergency-title">Need Immediate Care?</span>
+          <a href="tel:18005552739" class="emergency-call-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+            Call Nurse Line: (800) 555-APEX
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT AREA FOR DEMO LANDING PAGE -->
+  <main id="main-content">
+    
+    <!-- Breadcrumb Local Navigation (HCI Requirement) -->
+    <nav class="breadcrumb-bar" aria-label="Breadcrumb Trail">
+      <div class="container">
+        <ol class="breadcrumb-list">
+          <li class="breadcrumb-item"><a href="#">Home</a></li>
+          <li class="breadcrumb-separator" aria-hidden="true">/</li>
+          <li class="breadcrumb-item"><a href="#">Healthcare Coverage</a></li>
+          <li class="breadcrumb-separator" aria-hidden="true">/</li>
+          <li class="breadcrumb-item active" aria-current="page">PPO Network & Plan Overview</li>
+        </ol>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-icon">🛡️</span>
+            <span>Accredited Healthcare Organization • 2026 Choice Award</span>
+          </div>
+          <h1 class="hero-title">Healthcare Coverage Made Simple</h1>
+          <p class="hero-subtitle">Explore plans, benefits, providers, and payment options in one place.</p>
+          
+          <div class="hero-actions">
+            <a href="#plans-section" class="btn btn-primary">
+              <span>View Plans</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+            </a>
+            <a href="#coverage-section" class="btn btn-secondary">
+              <span>Explore Coverage</span>
+            </a>
+          </div>
+
+          <!-- Trust Badges Bar -->
+          <div class="hero-trust-bar">
+            <div class="trust-stat">
+              <span class="stat-num">99.2%</span>
+              <span class="stat-label">Claim Approval Rate</span>
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-stat">
+              <span class="stat-num">18,500+</span>
+              <span class="stat-label">Network Physicians</span>
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-stat">
+              <span class="stat-num">24/7</span>
+              <span class="stat-label">Virtual Doctor Access</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card-preview" aria-hidden="true">
+          <div class="floating-pfp-card">
+            <div class="float-card-header">
+              <div class="float-avatar">MS</div>
+              <div>
+                <div class="float-name">Member Active</div>
+                <div class="float-sub">Tier 1 PPO Preferred</div>
+              </div>
+            </div>
+            <div class="float-progress-wrap">
+              <div class="float-progress-label">
+                <span>Annual Deductible Met</span>
+                <strong>$1,250 / $1,500</strong>
+              </div>
+              <div class="progress-bar-track">
+                <div class="progress-bar-fill" style="width: 83%;"></div>
+              </div>
+            </div>
+            <div class="float-perks-list">
+              <div class="float-perk-row">✓ Primary Care Copay: $15</div>
+              <div class="float-perk-row">✓ Generic Rx Prescription: $0 Copay</div>
+              <div class="float-perk-row">✓ In-Network Urgent Care: Covered</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- DEMO SECTION 1: HEALTH PLANS -->
+    <section class="demo-section" id="plans-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Coverage Options</span>
+          <h2 class="section-title">Health Plans</h2>
+          <p class="section-subtitle">Tailored coverage tiers designed for individuals, families, and seniors.</p>
+        </div>
+
+        <div class="plans-cards-container">
+          <!-- Classic Plan -->
+          <div class="landing-plan-card">
+            <div class="card-plan-badge">Essential</div>
+            <h3 class="card-plan-name">Classic</h3>
+            <p class="card-plan-tagline">Basic health coverage for essential healthcare needs.</p>
+            <div class="plan-price"><span class="price-val">99</span><span class="price-period">/ month</span></div>
+            <ul class="plan-features">
+              <li>✓ Inpatient hospitalization (semi-private)</li>
+              <li>✓ Basic prescription formulary</li>
+              <li>✓ Annual wellness checkup & basic lab work</li>
+              <li>✓ Emergency room triage coverage</li>
+            </ul>
+            <button type="button" class="btn btn-outline plan-select-btn" data-plan="Classic">Select Classic Plan</button>
+          </div>
+
+          <!-- Standard Plan (Featured) -->
+          <div class="landing-plan-card featured">
+            <div class="popular-ribbon">Most Popular</div>
+            <div class="card-plan-badge badge-teal">Balanced</div>
+            <h3 class="card-plan-name">Standard</h3>
+            <p class="card-plan-tagline">Balanced coverage for everyday healthcare and emergencies.</p>
+            <div class="plan-price"><span class="price-val">₱999</span><span class="price-period">/ month</span></div>
+            <ul class="plan-features">
+              <li>✓ All Classic benefits included</li>
+              <li>✓ Specialist care without referral</li>
+              <li>✓ Diagnostic MRI & CT scans covered</li>
+              <li>✓ $15 primary consultation copay</li>
+              <li>✓ 90-day maintenance medications</li>
+            </ul>
+            <button type="button" class="btn btn-primary plan-select-btn" data-plan="Standard">Select Standard Plan</button>
+          </div>
+
+          <!-- Premium Plan -->
+          <div class="landing-plan-card">
+            <div class="card-plan-badge badge-gold">Maximum</div>
+            <h3 class="card-plan-name">Premium</h3>
+            <p class="card-plan-tagline">Expanded healthcare coverage with additional benefits.</p>
+            <div class="plan-price"><span class="price-val">₱9,999</span><span class="price-period">/ month</span></div>
+            <ul class="plan-features">
+              <li>✓ Full coverage private room hospitalization</li>
+              <li>✓ Zero deductible for preventative & ER care</li>
+              <li>✓ Complete dental, vision & maternity suite</li>
+              <li>✓ 24/7 VIP Concierge & telehealth access</li>
+              <li>✓ Worldwide travel emergency coverage</li>
+            </ul>
+            <button type="button" class="btn btn-outline plan-select-btn" data-plan="Premium">Select Premium Plan</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO SECTION 2: CORE COVERAGE -->
+    <section class="demo-section bg-alt" id="coverage-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">What's Covered</span>
+          <h2 class="section-title">Core Coverage Categories</h2>
+          <p class="section-subtitle">A transparent breakdown of your healthcare protection across key categories.</p>
+        </div>
+
+        <div class="coverage-grid">
+          <div class="coverage-card">
+            <div class="cov-icon">🏥</div>
+            <h4>Hospitalization & Surgery</h4>
+            <p>Full room & board, operating theaters, intensive care, and surgical team fees across all accredited medical centers.</p>
+            <span class="cov-tag">100% In-Network Covered</span>
+          </div>
+
+          <div class="coverage-card">
+            <div class="cov-icon">💊</div>
+            <h4>Pharmacy & Prescriptions</h4>
+            <p>Access to generic and preferred brand name medications with direct copay waivers at over 65,000 pharmacies.</p>
+            <span class="cov-tag">Tier 1 Generic $0 Copay</span>
+          </div>
+
+          <div class="coverage-card">
+            <div class="cov-icon">🚑</div>
+            <h4>Emergency Care</h4>
+            <p>Immediate ambulance transport and emergency department admission with no prior referral requirement.</p>
+            <span class="cov-tag">24/7 Global ER Protection</span>
+          </div>
+
+          <div class="coverage-card">
+            <div class="cov-icon">🔬</div>
+            <h4>Diagnostic Tests & Labs</h4>
+            <p>Full pathology tests, clinical blood chemistries, ultrasound, MRI, and low-dose CT scans with accredited lab partners.</p>
+            <span class="cov-tag">Direct Billing Available</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO SECTION 3: HEALTHCARE PROVIDERS -->
+    <section class="demo-section" id="providers-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Accredited Network</span>
+          <h2 class="section-title">Healthcare Providers & Facilities</h2>
+          <p class="section-subtitle">Find accredited hospitals, clinics, general physicians, and specialists near you.</p>
+        </div>
+
+        <div class="provider-search-box">
+          <div class="search-inputs">
+            <div class="input-field">
+              <label for="provider-query">Doctor or Facility Name</label>
+              <input type="text" id="provider-query" placeholder="e.g. St. Luke's, Cardiology, Dr. Morales..." />
+            </div>
+            <div class="input-field">
+              <label for="provider-loc">Location / Zip Code</label>
+              <input type="text" id="provider-loc" placeholder="City, State or Postal Code" value="Metro Area" />
+            </div>
+            <button type="button" class="btn btn-primary search-btn" id="provider-search-trigger">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              <span>Search Network</span>
+            </button>
+          </div>
+          <div class="quick-filters">
+            <span>Quick Filters:</span>
+            <button type="button" class="filter-chip active">All Providers</button>
+            <button type="button" class="filter-chip">Accredited Hospitals</button>
+            <button type="button" class="filter-chip">Urgent Care Clinics</button>
+            <button type="button" class="filter-chip">Teleconsultation Doctors</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO SECTION 4: BENEFITS & WELLNESS -->
+    <section class="demo-section bg-alt" id="benefits-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Member Perks</span>
+          <h2 class="section-title">Comprehensive Benefits Suite</h2>
+          <p class="section-subtitle">Wellness, preventive routines, and specialized dental and vision solutions.</p>
+        </div>
+
+        <div class="benefits-row">
+          <div class="benefit-block">
+            <div class="benefit-badge-icon">🦷</div>
+            <h4>Dental Benefits</h4>
+            <p>Bi-annual prophylaxis cleanings, composite fillings, fluoride treatments, and partial crowns.</p>
+          </div>
+
+          <div class="benefit-block">
+            <div class="benefit-badge-icon">👁️</div>
+            <h4>Vision Benefits</h4>
+            <p>Annual comprehensive eye exams plus a $200 yearly allowance for prescription frames or contacts.</p>
+          </div>
+
+          <div class="benefit-block">
+            <div class="benefit-badge-icon">👶</div>
+            <h4>Maternity Benefits</h4>
+            <p>Prenatal ultrasounds, routine obstetric appointments, hospital delivery room, and baby checkups.</p>
+          </div>
+
+          <div class="benefit-block">
+            <div class="benefit-badge-icon">🧘</div>
+            <h4>Wellness & Mental Health</h4>
+            <p>Zero-copay licensed therapy visits, digital wellness apps, and discounted fitness club memberships.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEMO SECTION 5: PAYMENT OPTIONS -->
+    <section class="demo-section" id="payment-section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-badge">Hassle-Free Billing</span>
+          <h2 class="section-title">Payment Options</h2>
+          <p class="section-subtitle">Choose from four secure and flexible payment channels for your monthly premiums.</p>
+        </div>
+
+        <div class="payment-grid">
+          <!-- Onsite Card -->
+          <div class="payment-method-card">
+            <div class="pm-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            </div>
+            <h3>Onsite</h3>
+            <p>Pay cash or debit at accredited branch centers, participating partner payment hubs, and hospital cashier desks.</p>
+            <span class="pm-perk">Immediate Printed Official Receipt</span>
+          </div>
+
+          <!-- E-Wallet Card -->
+          <div class="payment-method-card">
+            <div class="pm-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"></rect><line x1="2" y1="10" x2="22" y2="10"></line></svg>
+            </div>
+            <h3>E-Wallet</h3>
+            <p>One-tap payment through GCash, Maya, Apple Pay, and PayPal. Available 24/7 directly on mobile.</p>
+            <span class="pm-perk">Instant Coverage Reactivation</span>
+          </div>
+
+          <!-- Bank Account Card -->
+          <div class="payment-method-card">
+            <div class="pm-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
+            </div>
+            <h3>Bank Account</h3>
+            <p>Set up automatic monthly debit (ACH) or transfer through your online banking bill pay platform.</p>
+            <span class="pm-perk">Auto-Debit Discount ($5/mo)</span>
+          </div>
+
+          <!-- Mailing Card -->
+          <div class="payment-method-card">
+            <div class="pm-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+            </div>
+            <h3>Mailing</h3>
+            <p>Send check or money order via postal mail with your policy voucher to our central billing facility.</p>
+            <span class="pm-perk">Postmarked Verification Safe</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-col brand-col">
+        <div class="footer-logo">
+          <div class="logo-mark small" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none" width="28" height="28">
+              <rect width="40" height="40" rx="8" fill="#00A3A6"/>
+              <path d="M20 9L29 13.5V20.5C29 26.2 25.2 31.4 20 33C14.8 31.4 11 26.2 11 20.5V13.5L20 9Z" fill="#0A2540"/>
+              <path d="M20 15V27M14 21H26" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <span class="footer-brand-title">ApexCare Health</span>
+        </div>
+        <p class="footer-mission">Providing accessible, transparent, and trustworthy health insurance coverage with an expansive accredited PPO provider network.</p>
+        <div class="footer-badges">
+          <span class="badge-pill">HIPAA Compliant</span>
+          <span class="badge-pill">NCQA Accredited</span>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Plans & Coverage</h4>
+        <ul class="footer-links">
+          <li><a href="#plans-section">Classic Plan</a></li>
+          <li><a href="#plans-section">Standard Plan</a></li>
+          <li><a href="#plans-section">Premium Plan</a></li>
+          <li><a href="#coverage-section">Hospitalization & Surgery</a></li>
+          <li><a href="#coverage-section">Pharmacy Formulary</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Providers & Billing</h4>
+        <ul class="footer-links">
+          <li><a href="#providers-section">Find a Physician</a></li>
+          <li><a href="#providers-section">Hospital Directory</a></li>
+          <li><a href="#payment-section">Onsite Payment</a></li>
+          <li><a href="#payment-section">E-Wallet & Online Pay</a></li>
+          <li><a href="#payment-section">Bank Auto-Debit</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4 class="footer-heading">Member Support</h4>
+        <p class="support-text">24/7 Member Nurse Hotline:</p>
+        <a href="tel:18005552739" class="footer-phone">1-800-555-APEX</a>
+        <p class="support-hours">Customer Service: Mon–Sat, 7 AM – 9 PM</p>
+        <p class="support-email">support@apexcare.org</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container bottom-container">
+        <p class="copyright">© 2026 ApexCare Health Insurance Corporation. All rights reserved.</p>
+        <div class="bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Notice of Privacy Practices</a>
+          <a href="#">HCI Navigation Architecture</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Vanilla JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
